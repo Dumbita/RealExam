@@ -54,7 +54,7 @@ public class Spawn : MonoBehaviour
 
             i = Random.Range(0, points.Length);
 
-            if (i != k)
+            if (i != k && i != l && m != i && n != i && o != i)
             {
 
                 name = "CelulaEnergetica";
@@ -62,7 +62,7 @@ public class Spawn : MonoBehaviour
                 Instantiate(cube, points[i].position, points[i].rotation);
 
             }
-            else if (i == k || i == l || m == i|| n == i || o == i)
+            else
             {
 
                 if(j > 0)
